@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+.nav-bar {
+    text-align: center;
+    background-color: #E8F3E5;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 0) 1fr;
+    grid-template-rows: 1fr repeat(4, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 38rem;
+    padding: 6.5rem;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 38rem;
+    padding: 6.5rem 15rem 6.5rem 15rem;
+    
+    /* box-shadow:  28px 28px 56px #60a23a,
+             -28px -28px 56px #82dc4e; */
+}
+
+.left-container {
+/*     background-image: url("images/login-img.png");
+    background-position: top; */
+    position: relative;
+    bottom: 2.75rem;
+    flex: 50%;
+    background-color: #2A2C29;
+    color: white;
+    width: 100%;
+    padding: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    /* border: 5px solid pink; */
+    
+
+}
+
+.right-container {
+    flex: 50%;
+    background-image: url("images/login-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* border-radius: 2rem; */
+    /* border: 5px solid blue; */
+
+}
+
+/*FORM*/
+.login-form {
+    /* width: 100%; */
+    height: 80%;
+    /* background-color: saddlebrown; */
+    /* border: 5px solid blue; */
+    /* overflow: inherit; */
+    padding: 4rem;
+    font-size: 1.4rem;
+
+    
+}
+
+.form-header {
+    text-align: center;
+}
+
+.input-layer {
+    
+    margin: 2rem 0;
+}
+
+.input-layer label {
+    /* background-color: cyan; */
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.input-layer input {
+    color: #2A2C29;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    display: block;
+    width: 97%;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.button-layer {
+    /* font-size: 1.4rem; */
+    /* background-color: khaki; */
+    text-align: center;
+    margin: 3rem 0;
+
+}
+
+.btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.4rem;
+    /* background-color: white; */
+    background-color: white;
+    color: #2A2C29;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    /* transition: 0.3s; */
+    border: 0.22rem solid #71BF44;
+
+}
+
+.btn:hover {
+    background-color: #71BF44;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    /* box-shadow:  5px 5px 24px #60a23a,
+             -5px -5px 24px #82dc4e; */
+}
+
+.link-layer {
+    text-align: center;
+}
+
+.extra-link {
+    color: #71BF44;
+    text-decoration: none;
+}
+
+.extra-link:hover {
+    text-decoration: underline;
+}
+
+.extra-layer {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .right-container {
+        display: none;
+    }
+    .left-container {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+  }
+
+
+@media only screen and (max-width: 840px) {
+/*     .right-container {
+        display: none;
+    } */
+/*     .left-container {
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    } */
+
+    .container {
+        padding: 6.5rem 6rem 6.5rem 6rem;
+        /* box-shadow:  28px 28px 56px #60a23a,
+                 -28px -28px 56px #82dc4e; */
+    }
+
+}
+
+@media only screen and (max-width: 840px) {
+    /*     .right-container {
+            display: none;
+        } */
+    /*     .left-container {
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        } */
+    
+        .container {
+            /* height: 30rem; */
+            padding: 4rem 3rem 4rem 3rem;
+            /* box-shadow:  28px 28px 56px #60a23a,
+                     -28px -28px 56px #82dc4e; */
+        }
+/* 
+        .left-container {
+            padding-bottom: 2rem;
+        } */
+
+        .login-form {
+            /* padding: 2rem; */
+            font-size: 1rem;
+        
+            
+        }
+    
+    }
+
+
+    @media only screen and (max-width: 380px) {
+        .container {
+            /* height: 30rem; */
+            padding: 4rem 1.2rem 4rem 1.2rem;
+            /* box-shadow:  28px 28px 56px #60a23a,
+                     -28px -28px 56px #82dc4e; */
+        }
+
+        .input-layer input {
+            font-size: 1rem;
+            width: 90%;
+        }
+
+        .input-layer {
+            margin: 0.7rem 0;
+        }
+
+    }
